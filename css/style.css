@@ -9857,13 +9857,5 @@ textarea.form-control-lg {
     border: 1px solid #F74E2D;
   }
 }
-@media (max-width: 991.98px) {
-  body main section.festivalContainer a.icon-calendar {
-    margin-top: 5px;
-  }
-  body main section.spectacles article {
-    margin: 5px;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

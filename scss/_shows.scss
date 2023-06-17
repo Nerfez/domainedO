@@ -165,23 +165,3 @@
         }
     }
 }
-
-
-@include media-breakpoint-down(lg) {
-
-    body {
-        main {
-            section.festivalContainer {
-                a.icon-calendar {
-                    margin-top: 5px;
-                }
-            }
-
-            section.spectacles {
-                article {
-                    margin: 5px;
-                }
-            }
-        }
-    }
-}
