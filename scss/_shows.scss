@@ -1,0 +1,187 @@
+/* utilisation d'une mixin de bootstrap */
+@include media-breakpoint-up(md) {
+    body {
+        header {
+            font-weight: bold;
+
+            ul {
+                li {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+
+            a.icon-bookmark {
+                text-decoration: none;
+                color: $secondary;
+                border: 1px solid $secondary;
+
+                &:hover {
+                    background-color: $secondary;
+                    color: white;
+                }
+            }
+        }
+
+        main {
+            .festivalContainer {
+                background-color: #EFEFEF;
+                height: 120px;
+
+                section.festival {
+
+                    div {
+                        a {
+                            align-self: flex-start;
+                            background-color: black;
+                            color: white;
+                            padding: 5px 10px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+
+                            &:hover {
+                                background-color: white;
+                                color: black;
+                            }
+                        }
+
+                        a.icon-calendar {
+                            background-color: white;
+                            text-transform: uppercase;
+                            color: black;
+
+                            &:hover {
+                                background-color: black;
+                                text-decoration: none;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section.spectacles {
+
+                .primaryArt {
+                    background-image: url(../img/visuel_rvrnement.jpg);
+                }
+
+                .secondaryArt {
+                    background-image: url(../img/unnamed.jpg);
+                }
+
+                .thirdArt {
+                    background-image: url(../img/las-gabachas-1.jpg);
+                }
+
+                .fourthArt {
+                    background-image: url(../img/tangomotanc-richard-schroeder.jpg);
+                }
+
+                .fifthArt {
+                    background-image: url(../img/full-tukan-1-2.jpg);
+                }
+
+                .sixthArt {
+                    background-image: url(../img/photo-volver-webcx.dr_.jpeg);
+                }
+
+                .lastArt {
+                    background-image: url(../img/2000x740-folies-23.png);
+                }
+
+                article {
+                    text-transform: uppercase;
+                    min-height: 425px;
+                    background-size: 320px 425px;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    color: white;
+
+
+
+                    .bottom-show {
+                        background: linear-gradient(transparent, #000);
+
+                    }
+
+                    a {
+                        align-self: flex-start;
+                        background-color: black;
+                        color: white;
+                        padding: 5px 10px;
+                        text-decoration: none;
+                        margin-top: 10px;
+
+                        &:hover {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+
+                    p {
+                        text-transform: lowercase;
+                    }
+
+                    p.titreSpectacle {
+                        text-decoration-line: underline;
+                        text-decoration-color: $secondary;
+                    }
+
+                    .btn {
+                        text-transform: uppercase;
+                        border: 1px solid $secondary;
+                    }
+
+                    .btn-light {
+
+                        background-color: white;
+                        color: $secondary;
+
+                        &:hover {
+                            color: white;
+                            background-color: $secondary;
+                            border: 1px solid $secondary;
+                        }
+                    }
+
+                    .btn-secondary {
+                        color: white;
+                        background-color: $secondary;
+
+                        &:hover {
+                            background-color: white;
+                            color: $secondary;
+                            border: 1px solid $secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(lg) {
+
+    body {
+        main {
+            section.festivalContainer {
+                a.icon-calendar {
+                    margin-top: 5px;
+                }
+            }
+
+            section.spectacles {
+                article {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
